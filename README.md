@@ -41,7 +41,7 @@ To exemplify the pySEED operation, see the Test_pySEED.py file, where a classic 
 It is worth mentioning that SEED was designed to deal with maximization problems. For minimization problems, the functions must be transformed into a maximization case. To do this we simply apply the next operation: 1E8 - value_of_the_function, which has the optimum in 1E8. Below a detailed description of the code in Test_pySEED.py is shown.
 
 
-###Test_pySEED.py description
+### Test_pySEED.py description
 In order to import pySEED, use the next code:
 
 
