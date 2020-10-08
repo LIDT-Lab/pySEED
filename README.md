@@ -79,7 +79,6 @@ for individual in Individuals:
 Note that pySEED returns fitness values computed for the maximization case. So, in order to get the fitness values for a minimization case, those must be transformed using the next operation: 1E8 - individual.fitness_value
 
 
-```
 ## Authors
 ### Valentin Calzada-Ledesma
 ### Juan de Anda-Suárez
