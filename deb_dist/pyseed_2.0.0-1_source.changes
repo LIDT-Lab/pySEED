@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Wed, 07 Oct 2020 22:06:00 -0500
+Source: pyseed
+Binary: python3-pyseed
+Architecture: source
+Version: 2.0.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Valentin Calzada Ledesma, Juan de Anda Suarez <juan.ds@purisima.tecnm.mx>
+Changed-By: Valentin Calzada Ledesma, Juan de Anda Suarez <juan.ds@purisima.tecnm.mx>
+Description:
+ python3-pyseed - pySEED is a python inplementation of symmetric-approximation
+Changes:
+ pyseed (2.0.0-1) unstable; urgency=low
+ .
+   * source package automatically created by stdeb 0.8.5
+Checksums-Sha1:
+ c973ff9cd8404633824494a76c0ee5f64f978d3c 905 pyseed_2.0.0-1.dsc
+ 718f77bc21282a9c2becb670ff63495f6a1833b1 4941 pyseed_2.0.0.orig.tar.gz
+ 4478cdd437b2d75b1e996ea87d8fa4a78ba86fb2 1248 pyseed_2.0.0-1.debian.tar.xz
+Checksums-Sha256:
+ ed824e3f81aec1d0a37cc438cedb5e167baa94e61a6fc548319d7dfc31cab49c 905 pyseed_2.0.0-1.dsc
+ 48982e2f089ef399fe76a8ab9faafb1b247545a26fa5fcb188cf1b2195a9fef2 4941 pyseed_2.0.0.orig.tar.gz
+ 58a0d8d55ec766c8745a2e69fdec2d6b38f74f64305166f35623849dc3763557 1248 pyseed_2.0.0-1.debian.tar.xz
+Files:
+ 9bb782ffb774a22b8b3cd0e646ed1f9a 905 python optional pyseed_2.0.0-1.dsc
+ bbdcc651253a26294dd020ca583b954f 4941 python optional pyseed_2.0.0.orig.tar.gz
+ 072e88f7c23e55088c68022ce999fd42 1248 python optional pyseed_2.0.0-1.debian.tar.xz
