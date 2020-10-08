@@ -30,8 +30,9 @@ pySEED needs the requirements listed in the table below
 | :---: | :---: |
 | Python | >=3.5.2 |
 | numpy | >=1.18.2 |
-```
+
 To install pySEED directly on the operating system it is distributed through PyPI using the following command.
+```
 pip3 install pySEED
 ```
 ## Example
