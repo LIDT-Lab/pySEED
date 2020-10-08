@@ -7,8 +7,8 @@ A Continuous Optimization Algorithm," in IEEE Access, vol. 7, pp. 154859-154871,
 doi: 10.1109/ACCESS.2019.2948199.
 """
 
-import pySEED
-from Benchmark_functions import Sphere, Rosenbrock, Rastrigin, Ackley, Griewangk
+from pyseed import pySEED
+from pyseed.Benchmark_functions import Sphere
 
 # Parameters
 population_size = 300
