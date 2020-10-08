@@ -33,18 +33,27 @@ pySEED needs the requirements listed in the table below
 
 
 ## Example
-To exemplify the pySEED operation, we will use a classic function in optimization known as the Sphere function, it is defined in Eq. (6):
+To exemplify the pySEED operation, see the Test_pySEED.py file, where a classic function in optimization known as the Sphere function (Eq. (6)) is optimized:
 
 <p align="center"><img src="img/eq6.svg" /><p>
 
 
-It is worth mentioning that SEED was designed to deal with maximization problems. For minimization problems, the functions must be transformed into a maximization case. To do this we simply apply the next operation: 1E8 - value_of_the_function, which has the optimum in 1E8.
+It is worth mentioning that SEED was designed to deal with maximization problems. For minimization problems, the functions must be transformed into a maximization case. To do this we simply apply the next operation: 1E8 - value_of_the_function, which has the optimum in 1E8. Below a detailed description of the code in Test_pySEED.py is shown.
+
+
+###Test_pySEED.py description
+In order to import pySEED, use the next code:
+
+
+```
+from pyseed import pySEED
+```
 
 
 In the pyseed/ package, we define the Benchmark_functions.py file, where different fitness functions are programmed. To import the Sphere funcion use the next code:
 
 ```
-from Benchmark_functions import Sphere
+from pyseed.Benchmark_functions import Sphere
 ```
 
 Then the pySEED parameters must be set. The advantage of pySEED is that it does not require control parameters other than the number of elements in the population, which can be set to an empirically predefined value.
@@ -79,8 +88,9 @@ for individual in Individuals:
 Note that pySEED returns fitness values computed for the maximization case. So, in order to get the fitness values for a minimization case, those must be transformed using the next operation: 1E8 - individual.fitness_value
 
 
+
 ## Authors
-### Valentin Calzada-Ledesma
+### Valentín Calzada-Ledesma
 ### Juan de Anda-Suárez
 
 ## How to cite pySEED
