@@ -1,6 +1,6 @@
 # pySEED
 ## A brief description of the SEED algorithm
-pySEED is a Python implementation of the **Symmetric-Approximation Energy-Based Estimation of Distribution (SEED) algorithm: A Continuous Optimization Algorithm** [[1]](#1), which allows optimization in the continuous space for functions of independent variables. It is based on the Univariate Marginal Distribution scheme [[2]] of Estimation Distribution Algorithms (#2). Broadly speaking, SEED is an algorithm able to construct explicit probabilistic models that are iteratively refined to produce better and better solutions for a particular problem. To achieve this, SEED uses the Boltzmann Probability Distribution Function (PDF-B) defined in Eq. (1), since the PDF-B guarantees that the probability of finding new solutions (i.e. new individuals in evolutionary parlance) that performs worse than the previous solutions is almost zero.
+pySEED is a Python implementation of the **Symmetric-Approximation Energy-Based Estimation of Distribution (SEED) algorithm: A Continuous Optimization Algorithm** [[1]](#1), which allows optimization in the continuous space for functions of independent variables. It is based on the Univariate Marginal Distribution scheme  of Estimation Distribution Algorithms [[2]](#2). Broadly speaking, SEED is an algorithm able to construct explicit probabilistic models that are iteratively refined to produce better and better solutions for a particular problem. To achieve this, SEED uses the Boltzmann Probability Distribution Function (PDF-B) defined in Eq. (1), since the PDF-B guarantees that the probability of finding new solutions (i.e. new individuals in evolutionary parlance) that performs worse than the previous solutions is almost zero.
 <p align="center"><img src="img/eq1.svg" /><p>
 
 
@@ -9,7 +9,7 @@ Due to the difficulty in generating new solutions based on the PDF-B, an approxi
 
 <p align="center"><img src="img/2.svg" /><p>
 
-where the normal distribution is given by Eq. (3)
+where the normal distribution is given by Eq. (3):
 
 <p align="center"><img src="img/eq3.svg" /><p>
 
@@ -30,6 +30,7 @@ pySEED needs the requirements listed in the table below
 | :---: | :---: |
 | Python | >=3.5.2 |
 | numpy | >=1.18.2 |
+
 To install pySEED directly on the operating system it is distributed through PyPI using the following command.
 ```
 pip3 install pySEED
