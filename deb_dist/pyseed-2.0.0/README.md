@@ -30,10 +30,8 @@ pySEED needs the requirements listed in the table below
 | :---: | :---: |
 | Python | >=3.5.2 |
 | numpy | >=1.18.2 |
-To install pySEED directly on the operating system it is distributed through PyPI using the following command.
-```
-pip3 install pySEED
-```
+
+
 ## Example
 To exemplify the pySEED operation, we will use a classic function in optimization known as the Sphere function, it is defined in Eq. (6):
 
@@ -46,8 +44,7 @@ It is worth mentioning that SEED was designed to deal with maximization problems
 In the pyseed/ package, we define the Benchmark_functions.py file, where different fitness functions are programmed. To import the Sphere funcion use the next code:
 
 ```
-from pyseed.pySEED import SEED_EDA
-from pyseed.Benchmark_functions import Sphere
+from Benchmark_functions import Sphere
 ```
 
 Then the pySEED parameters must be set. The advantage of pySEED is that it does not require control parameters other than the number of elements in the population, which can be set to an empirically predefined value.
@@ -66,7 +63,7 @@ iterations = 1000
 With the parameters set, we can run the algorithm using the following code:
 
 ```
-SEED = SEED_EDA(population_size, dimensions, lower_limit, upper_limit, fitness_function, 1E8 - stopping_criterion, print_evolution=True)
+SEED = pySEED.SEED_EDA(population_size, dimensions, lower_limit, upper_limit, fitness_function, 1E8 - stopping_criterion, print_evolution=True)
 Individuals = SEED.evolution(iterations)
 ```
 
